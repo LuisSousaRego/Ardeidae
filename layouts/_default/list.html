@@ -1,0 +1,18 @@
+{{ define "main" }}
+
+<section id="content" class="page-content">
+    <table>
+        {{ range .Site.RegularPages.ByPublishDate.Reverse }}
+        <tr>
+            <td class="post-date-time date-time-font">
+                <time>{{ .Date.Format (.Site.Params.dateform | default "2006-01-02") }}</time>
+            </td>
+            <td class="post">
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </td>
+        </tr>
+        {{ end }}
+    </table>
+</section>
+
+{{ end }}
