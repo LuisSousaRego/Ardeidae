@@ -1,19 +1,156 @@
-{{ define "main" }}
+<!DOCTYPE html>
+<html>
+{{- partial "head.html" . -}}
 
-<section id="content" class="page-content">
-    <table>
-        {{ range .Site.RegularPages.ByPublishDate.Reverse }}
-        <tr>
-            <td class="post-date-time date-time-font">
-                <time>{{ .Date.Format (.Site.Params.dateform | default "Jan 02 2006") }}</time>
-            </td>
-            <td class="post">
-                <a href="{{ .Permalink }}">{{ .Title }}</a>
-            </td>
-        </tr>
-        {{ end }}
-    </table>
-</section>
-<canvas id="landing-background"></canvas>
+<body>
+    <div id="landing">
 
-{{ end }}
+        <canvas id="landing-canva"></canvas>
+
+        <section id="landing-content">
+            {{- partial "header.html" . -}}
+            <div id="posts-container">
+                <table>
+                    {{ range .Site.RegularPages.ByPublishDate.Reverse }}
+                    <tr>
+                        <td class="post-date-time date-time-font">
+                            <time>{{ .Date.Format (.Site.Params.dateform | default "Jan 02 2006") }}</time>
+                        </td>
+                        <td class="post">
+                            <a href="{{ .Permalink }}">{{ .Title }}</a>
+                        </td>
+                    </tr>
+                    {{ end }}
+                    <tr>
+                        <td> Narya</td>
+                    </tr>
+                    <tr>
+                        <td> Narya</td>
+                    </tr>
+                    <tr>
+                        <td> Narya</td>
+                    </tr>
+                    <tr>
+                        <td> Narya</td>
+                    </tr>
+                    <tr>
+                        <td> Narya</td>
+                    </tr>
+                    <tr>
+                        <td> Narya</td>
+                    </tr>
+                    <tr>
+                        <td> Narya</td>
+                    </tr>
+                    <tr>
+                        <td> Narya</td>
+                    </tr>
+                    <tr>
+                        <td> Narya</td>
+                    </tr>
+                    <tr>
+                        <td> Narya</td>
+                    </tr>
+                    <tr>
+                        <td> Narya</td>
+                    </tr>
+                    <tr>
+                        <td> Narya</td>
+                    </tr>
+                    <tr>
+                        <td> Narya</td>
+                    </tr>
+                    <tr>
+                        <td> Narya</td>
+                    </tr>
+                    <tr>
+                        <td> Narya</td>
+                    </tr>
+                    <tr>
+                        <td> Narya</td>
+                    </tr>
+                    <tr>
+                        <td> Narya</td>
+                    </tr>
+                    <tr>
+                        <td> Narya</td>
+                    </tr>
+                    <tr>
+                        <td> Narya</td>
+                    </tr>
+                    <tr>
+                        <td> Narya</td>
+                    </tr>
+                    <tr>
+                        <td> Narya</td>
+                    </tr>
+                    <tr>
+                        <td> Narya</td>
+                    </tr>
+                    <tr>
+                        <td> Narya</td>
+                    </tr>
+                    <tr>
+                        <td> Narya</td>
+                    </tr>
+                    <tr>
+                        <td> Narya</td>
+                    </tr>
+                    <tr>
+                        <td> Narya</td>
+                    </tr>
+                    <tr>
+                        <td> Narya</td>
+                    </tr>
+                    <tr>
+                        <td> Narya</td>
+                    </tr>
+                    <tr>
+                        <td> Narya</td>
+                    </tr>
+                    <tr>
+                        <td> Narya</td>
+                    </tr>
+                    <tr>
+                        <td> Narya</td>
+                    </tr>
+                    <tr>
+                        <td> Narya</td>
+                    </tr>
+                    <tr>
+                        <td> Narya</td>
+                    </tr>
+                    <tr>
+                        <td> Narya</td>
+                    </tr>
+                    <tr>
+                        <td> Narya</td>
+                    </tr>
+                    <tr>
+                        <td> Narya</td>
+                    </tr>
+                    <tr>
+                        <td> Narya</td>
+                    </tr>
+                    <tr>
+                        <td> Narya</td>
+                    </tr>
+                    <tr>
+                        <td> Narya</td>
+                    </tr>
+                    <tr>
+                        <td> Narya</td>
+                    </tr>
+                    <tr>
+                        <td> Narya</td>
+                    </tr>
+                </table>
+            </div>
+            {{- partial "footer.html" . -}}
+        </section>
+    </div>
+
+    <script src="/js/genart.js"></script>
+</body>
+
+</html>
