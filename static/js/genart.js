@@ -1,4 +1,4 @@
-const canvas = document.getElementById("landing-background");
+const canvas = document.getElementById("landing-canva");
 const ctx = canvas.getContext("2d");
 
 ctx.fillStyle = "#EEEEEE";
