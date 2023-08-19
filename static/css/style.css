@@ -1,11 +1,11 @@
 body {
     color: black;
-    background-color: rgba(255, 255, 255, 0);
     margin: 0;
 }
 
 a {
     text-decoration: none;
+    color: beige;
 }
 
 a:hover {
@@ -19,12 +19,14 @@ a:hover {
     font-family: "Ubuntu Mono", monospace;
     font-weight: bold;
     font-size: 2rem;
+    background-color: #02182b;
 }
 
 #landing ul {
     list-style-type: none;
     padding: 0rem 2rem;
     margin: 0;
+    padding-right: 10rem;
 }
 
 #landing li {
@@ -35,20 +37,19 @@ a:hover {
 #landing time {
     font-weight: normal;
     font-size: 1.5rem;
-    color: grey;
+    color: #0197f6;
 }
 
 #landing-content {
     max-height: 100vh;
-    width: 50vw;
+    width: 45vw;
     height: 100%;
     overflow: auto;
 }
 
-#landing-canva {
-    box-shadow: inset 0px 0px 0px 10px teal;
-    background-color: cadetblue;
-    width: 50%;
+#landing-canva canvas {
+    background-color: white;
+    width: 55%;
 }
 
 #social-links {

@@ -5,7 +5,7 @@
 <body>
     <div id="landing">
 
-        <canvas id="landing-canva"></canvas>
+        <div id="landing-canva"></div>
 
         <section id="landing-content">
             {{- partial "header.html" . -}}
@@ -15,6 +15,7 @@
                     <li class="post">
                         <a href="{{ .Permalink }}">
                             {{ .Title }}
+                            <br />
                             <time>{{ .Date.Format (.Site.Params.dateform | default "Jan 02 2006") }}</time>
                         </a>
                     </li>
@@ -24,6 +25,7 @@
         </section>
     </div>
 
+    <script src="/p5/p5.min.js"></script>
     <script src="/js/genart.js"></script>
 </body>
 
