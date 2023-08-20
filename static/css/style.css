@@ -1,6 +1,8 @@
+html,
 body {
     color: black;
     margin: 0;
+    padding: 0;
 }
 
 a {
@@ -43,13 +45,17 @@ a:hover {
 #landing-content {
     max-height: 100vh;
     width: 45vw;
-    height: 100%;
     overflow: auto;
 }
 
-#landing-canva canvas {
-    background-color: white;
+#landing-canva {
     width: 55%;
+}
+
+#landing-canva canvas {
+    border-right: 0.4rem solid black;
+    display: block;
+    width: 100%;
 }
 
 #social-links {

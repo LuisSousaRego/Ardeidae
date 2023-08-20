@@ -4,9 +4,10 @@ let padding = arcSize
 let phi = 0;
 
 function setup() {
-    const canva = createCanvas(windowWidth * 0.55, windowHeight);
+    const canvaContainer = select("#landing-canva");
+    const canva = createCanvas(canvaContainer.width, canvaContainer.height);
     canva.parent("landing-canva");
-    frameRate(24);
+    frameRate(15);
 }
 
 function draw() {
@@ -29,6 +30,5 @@ function draw() {
 
         }
     }
-    phi++;
-    phi++;
+    phi = phi + 3;
 }
