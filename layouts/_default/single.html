@@ -1,24 +1,13 @@
 {{ define "main" }}
 
-    <section class="blog-post">
-        <h1>{{ .Title }}</h1>
-        <div class="blog-post-subheader">
-            {{ .Date.Format (.Site.Params.dateform | default "January 2, 2006") }}
-        </div>
-        <div class="blog-post-content">
-            {{ .Content }}
-        </div>
-    </section>
-    {{ if .Params.Tags }}
-        <section class="post-tags">
-            <hr>
-            Tags:
-            <ul class="post-tag-list">
-                {{ range (.GetTerms "tags") }}
-                <li class="post-tag-list-item"><a href="{{ .Permalink }}">{{ .LinkTitle }}</a>;</li>
-                {{ end }}
-            </ul>
-        </section>
-    {{ end }}
+<section id="post">
+    <h1>{{ .Title }}</h1>
+    <time>
+        {{ .Date.Format (.Site.Params.dateform | default "2006-01-02") }}
+    </time>
+    <div class="blog-post-content">
+        {{ .Content }}
+    </div>
+</section>
 
 {{ end }}

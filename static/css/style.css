@@ -3,17 +3,11 @@ body {
     color: black;
     margin: 0;
     padding: 0;
+    background-color: whitesmoke;
+
 }
 
-a {
-    text-decoration: none;
-    color: whitesmoke;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
+/* landing page */
 
 #landing {
     display: flex;
@@ -22,6 +16,15 @@ a:hover {
     font-weight: bold;
     font-size: 2rem;
     background-color: #29524a;
+}
+
+#landing a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+#landing a:hover {
+    text-decoration: underline;
 }
 
 #landing ul {
@@ -57,7 +60,10 @@ a:hover {
     width: 100%;
 }
 
+/* header */
+
 #social-links {
+    max-width: 1200px;
     text-align: end;
     padding: 1rem;
 }
@@ -69,4 +75,21 @@ a:hover {
 #social-links svg {
     width: 1.5rem;
     height: 1.5rem;
+}
+
+/* post page */
+
+#post {
+    margin: auto;
+    font-family: "Noto Sans", sans-serif;
+    max-width: 900px;
+    font-size: 1.3rem;
+}
+
+#post h1 {
+    color: #29524a
+}
+
+#post time {
+    color: #ED6A5A
 }
