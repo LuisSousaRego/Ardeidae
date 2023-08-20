@@ -7,7 +7,7 @@ body {
 
 a {
     text-decoration: none;
-    color: beige;
+    color: whitesmoke;
 }
 
 a:hover {
@@ -21,7 +21,7 @@ a:hover {
     font-family: "Ubuntu Mono", monospace;
     font-weight: bold;
     font-size: 2rem;
-    background-color: #02182b;
+    background-color: #29524a;
 }
 
 #landing ul {
@@ -39,7 +39,7 @@ a:hover {
 #landing time {
     font-weight: normal;
     font-size: 1.5rem;
-    color: #0197f6;
+    color: #f7e733;
 }
 
 #landing-content {
@@ -53,7 +53,6 @@ a:hover {
 }
 
 #landing-canva canvas {
-    border-right: 0.4rem solid black;
     display: block;
     width: 100%;
 }

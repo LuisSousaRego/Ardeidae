@@ -1,3 +1,11 @@
+const colors = {
+    "aureolin": "#F7E733",
+    "green": "#29524A",
+    "whiteSmoke": "#F5F5F5",
+    "teaRose": "#E9BCB7",
+    "turquoise": "#41E2BA",
+}
+
 let arcSize = 100;
 let yStep = 10;
 let padding = arcSize
