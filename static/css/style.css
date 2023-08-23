@@ -23,10 +23,6 @@ body {
     color: whitesmoke;
 }
 
-#landing a:hover {
-    text-decoration: underline;
-}
-
 #landing ul {
     list-style-type: none;
     padding: 0rem 2rem;
@@ -49,6 +45,12 @@ body {
     max-height: 100vh;
     width: 45vw;
     overflow: auto;
+    box-shadow: -3px 0px 15px 0px rgba(0, 0, 0, 0.50);
+    padding-top: 0.5rem;
+}
+
+#posts-container a:hover {
+    text-decoration: underline;
 }
 
 #landing-canva {
@@ -62,17 +64,32 @@ body {
 
 /* header */
 
+header {
+    max-width: 900px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.header-group {
+    width: fit-content;
+    font-weight: bold;
+    background-color: #29524a;
+    padding: 0.2rem 0.6rem;
+    display: inline-block;
+}
+
 #social-links {
-    max-width: 1200px;
-    text-align: end;
-    padding: 1rem;
+    float: right;
 }
 
-#social-links a {
+.header-icon {
     text-decoration: none;
+    font-size: 2rem;
+    color: whitesmoke;
+    padding: 0 0.3rem;
 }
 
-#social-links svg {
+.header-icon svg {
     width: 1.5rem;
     height: 1.5rem;
 }
@@ -87,9 +104,10 @@ body {
 }
 
 #post h1 {
-    color: #29524a
+    color: #29524a;
+    margin: 1rem 0 0.5rem 0;
 }
 
 #post time {
-    color: #ED6A5A
+    color: gray;
 }
