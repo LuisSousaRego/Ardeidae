@@ -7,9 +7,9 @@
 
         <div id="landing-canva"></div>
 
-        <section id="landing-content">
+        <div id="landing-content">
             {{- partial "header.html" . -}}
-            <div id="posts-container">
+            <section id="posts-container">
                 <ul>
                     {{ range .Site.RegularPages.ByPublishDate.Reverse }}
                     <li class="post">
@@ -21,8 +21,8 @@
                     </li>
                     {{ end }}
                 </ul>
-            </div>
-        </section>
+            </section>
+        </div>
     </div>
 
     <script src="/p5/p5.min.js"></script>

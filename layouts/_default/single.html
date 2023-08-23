@@ -5,7 +5,7 @@
     <time>
         {{ .Date.Format (.Site.Params.dateform | default "2006-01-02") }}
     </time>
-    <div class="blog-post-content">
+    <div id="post-content">
         {{ .Content }}
     </div>
 </section>
