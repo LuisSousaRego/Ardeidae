@@ -1,10 +1,15 @@
+/* general */
+
 html,
 body {
     color: black;
     margin: 0;
     padding: 0;
     background-color: whitesmoke;
+}
 
+a {
+    color: #29524a
 }
 
 /* landing page */
@@ -120,4 +125,15 @@ header {
 #post-content {
     text-align: justify;
     text-justify: inter-word;
+}
+
+/* footer */
+
+footer {
+    font-family: "Ubuntu Mono", monospace;
+    color: grey;
+    font-size: 1rem;
+    margin: 0 auto;
+    padding: 5rem 0 2rem 0;
+    text-align: center;
 }
