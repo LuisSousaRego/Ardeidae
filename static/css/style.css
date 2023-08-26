@@ -50,10 +50,19 @@ a {
     max-height: 100vh;
     width: 45vw;
     overflow: auto;
-    box-shadow: -3px 0px 15px 0px rgba(0, 0, 0, 0.50);
+    /* box-shadow: -3px 0px 15px 0px rgba(0, 0, 0, 0.50); */
     padding-top: 0.5rem;
 }
 
+#landing-content footer {
+    color: whitesmoke;
+    font-weight: normal;
+}
+
+#landing-content footer a {
+    text-decoration: underline;
+    color: #f7e733;
+}
 
 #posts-container {
     margin-top: 3rem;
