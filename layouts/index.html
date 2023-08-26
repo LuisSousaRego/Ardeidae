@@ -16,7 +16,7 @@
                         <a href="{{ .Permalink }}">
                             {{ .Title }}
                             <br />
-                            <time>{{ .Date.Format (.Site.Params.dateform | default "Jan 02 2006") }}</time>
+                            <time>{{ .Date.Format (.Site.Params.dateform | default "2006-01-02") }}</time>
                         </a>
                     </li>
                     {{ end }}
