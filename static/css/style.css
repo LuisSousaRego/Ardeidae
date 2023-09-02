@@ -2,14 +2,18 @@
 
 html,
 body {
-    color: black;
+    color: whitesmoke;
     margin: 0;
     padding: 0;
-    background-color: whitesmoke;
+    background-color: #29524a;
 }
 
 a {
-    color: #29524a
+    color: #f7e733
+}
+
+hr {
+    color: whitesmoke
 }
 
 /* landing page */
@@ -132,17 +136,17 @@ header {
     margin: auto;
     font-family: "Noto Sans", sans-serif;
     max-width: 900px;
-    font-size: 1.3rem;
+    font-size: 1rem;
     padding: 0 1rem;
 }
 
 #post h1 {
-    color: #29524a;
+    color: whitesmoke;
     margin: 4rem 0 0.5rem 0;
 }
 
 #post time {
-    color: gray;
+    color: #f7e733;
 }
 
 #post-content {
@@ -154,10 +158,10 @@ header {
 
 footer {
     font-family: "Ubuntu Mono", monospace;
-    color: grey;
+    color: whitesmoke;
     font-size: 1rem;
     margin: 0 auto;
-    padding: 5rem 0 2rem 0;
+    padding: 3rem 0 2rem 0;
     text-align: center;
 }
 
