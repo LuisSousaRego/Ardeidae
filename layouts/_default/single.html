@@ -9,12 +9,16 @@
     <div id="post-content">
         {{ .Content }}
     </div>
-    {{ if .Site.Params.email }}
+</section>
+{{ if .Site.Params.email }}
+<section id="after-post">
+    <p>If you have any comments or questions about this post, feel free to:</p>
     <div id="reply-by-email">
         <a href="mailto:{{ .Site.Params.email }}?subject=Reply to: {{.Page.Title}}">Reply by
             email</a>
     </div>
-    {{ end }}
 </section>
+{{ end }}
+
 
 {{ end }}

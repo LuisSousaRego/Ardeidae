@@ -168,10 +168,18 @@ header {
     text-justify: inter-word;
 }
 
+#after-post {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+    margin: 5rem auto;
+}
+
 #reply-by-email {
     text-align: center;
     color: whitesmoke;
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
 
 #reply-by-email a {
