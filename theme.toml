@@ -4,12 +4,12 @@
 name = "Ardeidae"
 license = "MIT"
 licenselink = "https://github.com/LuisSousaRego/Ardeidae/blob/master/LICENSE"
-description = ""
-homepage = "http://example.com/"
-tags = []
-features = []
-min_version = "0.115.4"
+description = "A blog theme that features generative art on the home page."
+homepage = "http://luissousarego.github.io/ardeidae-demo/"
+tags = ["blog", "generative art"]
+features = ["generative art", "responsiveness", "readability", "email reply"]
 
-[author]
-name = "Luís Sousa Rêgo"
-homepage = "https://luisrego.com"
+authors = [
+    {name = "Luís Sousa Rêgo", homepage = "https://blog.luisrego.com"},
+    {name = "Darya Plotnytska", homepage = "https://www.github.com/ryaplots"}
+]
