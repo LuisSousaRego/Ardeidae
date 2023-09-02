@@ -89,6 +89,9 @@ header {
     max-width: 800px;
     margin: 1rem auto 0 auto;
     line-height: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #site-title {
@@ -100,11 +103,8 @@ header {
     font-family: "Noto Sans", sans-serif;
     font-size: 1.5rem;
     font-weight: bold;
-}
-
-#site-title a {
-    color: whitesmoke;
     text-decoration: none;
+
 }
 
 #site-title:hover {
@@ -112,22 +112,11 @@ header {
     background-color: whitesmoke;
 }
 
-
-#site-title:hover a {
-    color: #29524a;
-
-}
-
 .header-group {
     width: fit-content;
     font-weight: bold;
     background-color: #29524a;
     padding: 0.2rem 0.6rem;
-    display: inline-block;
-}
-
-#social-links {
-    float: right;
 }
 
 .header-icon {
@@ -148,7 +137,6 @@ header {
     font-family: "Noto Sans", sans-serif;
     max-width: 800px;
     font-size: 1.2rem;
-    padding: 0 1rem;
 }
 
 #post-title {
@@ -191,7 +179,7 @@ header {
     padding: 0.6rem;
 }
 
-#reply-by-email:hover a {
+#reply-by-email a:hover {
     background-color: #f7e733;
     color: #29524a;
 }
@@ -215,17 +203,8 @@ footer {
 @media only screen and (max-width: 992px) {
 
     header {
-        margin-left: 0;
-        padding-left: 2rem;
-    }
-
-    #site-title {
-        display: block;
-        width: fit-content;
-    }
-
-    #social-links {
-        float: left
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .header-group {
@@ -235,6 +214,11 @@ footer {
     #landing {
         flex-direction: column;
         height: unset;
+    }
+
+    #landing header {
+        margin-left: 0;
+        padding-left: 2rem; 
     }
 
     #landing-canva {
@@ -251,7 +235,7 @@ footer {
     }
 
     #posts-container {
-        margin-top: 5rem;
+        margin-top: 4rem;
         padding-left: 2rem;
     }
 }
