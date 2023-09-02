@@ -9,6 +9,12 @@
     <div id="post-content">
         {{ .Content }}
     </div>
+    {{ if .Site.Params.email }}
+    <div id="reply-by-email">
+        <a href="mailto:{{ .Site.Params.email }}?subject=Reply to: {{.Page.Title}}">Reply by
+            email</a>
+    </div>
+    {{ end }}
 </section>
 
 {{ end }}

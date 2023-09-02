@@ -1,16 +1,9 @@
 <header>
-    {{ if .IsHome }}
     <section id="site-title">
-        {{ .Site.Title }}
-    </section>
-
-    {{ else }}
-    <section id="site-title" class="header-group">
-        <a id="to-landing" href="/">
+        <a href="/">
             {{ .Site.Title }}
         </a>
     </section>
-    {{ end }}
     <section id="social-links" class="header-group">
         <a href={{.Site.Params.github}} class="header-icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github"
