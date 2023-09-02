@@ -21,10 +21,6 @@ hr {
 #landing {
     display: flex;
     height: 100vh;
-    font-family: "Ubuntu Mono", monospace;
-    font-weight: bold;
-    font-size: 2rem;
-    background-color: #29524a;
 }
 
 #landing a {
@@ -54,7 +50,7 @@ hr {
     width: 45vw;
     overflow: auto;
     /* box-shadow: -3px 0px 15px 0px rgba(0, 0, 0, 0.50); */
-    padding: 0.5rem 0 0 2rem;
+    padding: 0 0 0 2rem;
 }
 
 #landing-content footer {
@@ -68,6 +64,9 @@ hr {
 }
 
 #posts-container {
+    font-size: 2rem;
+    font-family: "Ubuntu Mono", monospace;
+    font-weight: bold;
     margin-top: 3rem;
 }
 
@@ -87,13 +86,18 @@ hr {
 /* header */
 
 header {
-    max-width: 900px;
-    margin: 0 auto;
+    max-width: 800px;
+    margin: 1rem auto 0 auto;
+    line-height: 1;
 }
 
 #to-landing {
-    font-family: "Ubuntu Mono", monospace;
-    font-size: 1.5rem;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+#to-landing:hover {
+    text-decoration: underline;
 }
 
 #site-title {
@@ -104,6 +108,7 @@ header {
     text-transform: uppercase;
     font-family: "Noto Sans", sans-serif;
     font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .header-group {
@@ -120,7 +125,6 @@ header {
 
 .header-icon {
     text-decoration: none;
-    font-size: 2rem;
     color: whitesmoke;
     padding: 0 0.3rem;
 }
@@ -135,18 +139,22 @@ header {
 #post {
     margin: auto;
     font-family: "Noto Sans", sans-serif;
-    max-width: 900px;
+    max-width: 800px;
     font-size: 1rem;
     padding: 0 1rem;
 }
 
-#post h1 {
+#post-title {
     color: whitesmoke;
     margin: 4rem 0 0.5rem 0;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 #post time {
     color: #f7e733;
+    font-size: 1.3rem;
+    font-weight: bold;
 }
 
 #post-content {
@@ -159,6 +167,7 @@ header {
 footer {
     font-family: "Ubuntu Mono", monospace;
     color: whitesmoke;
+    opacity: 0.75;
     font-size: 1rem;
     margin: 0 auto;
     padding: 3rem 0 2rem 0;

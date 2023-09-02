@@ -1,10 +1,11 @@
 {{ define "main" }}
 
 <section id="post">
-    <h1>{{ .Title }}</h1>
+    <h1 id="post-title">{{ .Title }}</h1>
     <time>
         {{ .Date.Format (.Site.Params.dateform | default "2006-01-02") }}
     </time>
+    <hr />
     <div id="post-content">
         {{ .Content }}
     </div>
