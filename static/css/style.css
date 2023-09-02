@@ -31,7 +31,7 @@ hr {
 #landing ul {
     list-style-type: none;
     margin: 0;
-    padding: 0 10rem 0 0;
+    padding: 0;
 }
 
 #landing li {
@@ -68,6 +68,7 @@ hr {
     font-family: "Ubuntu Mono", monospace;
     font-weight: bold;
     margin-top: 3rem;
+    padding: 0 10rem 0 0;
 }
 
 #posts-container a:hover {
@@ -211,6 +212,7 @@ img {
     header {
         flex-direction: column;
         align-items: flex-start;
+        padding: 0 1rem;
     }
 
     .header-group {
@@ -242,6 +244,14 @@ img {
 
     #posts-container {
         margin-top: 4rem;
-        padding-left: 2rem;
+        padding: 0 2rem;
+    }
+
+    #post {
+        padding: 0 1rem;
+    }
+
+    #after-post {
+        padding: 0 2rem;
     }
 }
