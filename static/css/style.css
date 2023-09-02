@@ -30,9 +30,8 @@ a {
 
 #landing ul {
     list-style-type: none;
-    padding: 0rem 2rem;
     margin: 0;
-    padding-right: 10rem;
+    padding: 0 10rem 0 0;
 }
 
 #landing li {
@@ -51,7 +50,7 @@ a {
     width: 45vw;
     overflow: auto;
     /* box-shadow: -3px 0px 15px 0px rgba(0, 0, 0, 0.50); */
-    padding-top: 0.5rem;
+    padding: 0.5rem 0 0 2rem;
 }
 
 #landing-content footer {
@@ -86,6 +85,21 @@ a {
 header {
     max-width: 900px;
     margin: 0 auto;
+}
+
+#to-landing {
+    font-family: "Ubuntu Mono", monospace;
+    font-size: 1.5rem;
+}
+
+#site-title {
+    display: inline-block;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    padding: 0.2rem 0.6rem;
+    text-transform: uppercase;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1.5rem;
 }
 
 .header-group {
