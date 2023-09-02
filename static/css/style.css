@@ -197,6 +197,12 @@ footer {
     text-align: center;
 }
 
+/* others */
+
+img {
+    max-width: 100%;
+}
+
 
 /* media queries */
 
@@ -218,7 +224,7 @@ footer {
 
     #landing header {
         margin-left: 0;
-        padding-left: 2rem; 
+        padding-left: 2rem;
     }
 
     #landing-canva {
