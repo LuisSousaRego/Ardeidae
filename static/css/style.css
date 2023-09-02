@@ -112,7 +112,8 @@ header {
     background-color: whitesmoke;
 }
 
-#site-title a:hover {
+
+#site-title:hover a {
     color: #29524a;
 
 }
@@ -190,7 +191,7 @@ header {
     padding: 0.6rem;
 }
 
-#reply-by-email a:hover {
+#reply-by-email:hover a {
     background-color: #f7e733;
     color: #29524a;
 }
