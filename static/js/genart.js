@@ -8,22 +8,34 @@ const colors = {
 
 let arcSize = 100;
 let yStep = 10;
-let padding = arcSize
+let padding = arcSize * 4;
 let phi = 0;
+let phiIncrement = 3;
+
+let rotation = 0
 
 function setup() {
     const canvaContainer = select("#landing-canva");
     const canva = createCanvas(canvaContainer.width, canvaContainer.height);
     canva.parent("landing-canva");
     frameRate(15);
+
+    // random vars
+    rotation = random(PI / 2);
+    arcSize = random(50, 150);
+    yStep = random(8, 12);
+    phiIncrement = random(1, 5);
 }
 
 function draw() {
-    background('grey');
+    background(colors.green);
     noFill();
-    stroke(245);
+    stroke(colors.teaRose);
 
-    for (let y = -padding; y < height + padding; y += yStep) {
+    rotate(rotation);
+    translate(0, -(Math.sin(rotation) * width));
+
+    for (let y = -padding; y < (height) + padding; y += yStep) {
 
         let sw1 = map(sin(radians(y + phi)), -1, 1, 2, yStep);
         strokeWeight(sw1)
@@ -38,5 +50,5 @@ function draw() {
 
         }
     }
-    phi = phi + 3;
+    phi = phi + phiIncrement;
 }
