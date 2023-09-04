@@ -116,7 +116,6 @@ header {
 .header-group {
     width: fit-content;
     font-weight: bold;
-    background-color: #29524a;
     padding: 0.2rem 0.6rem;
 }
 
@@ -204,6 +203,13 @@ img {
     max-width: 100%;
 }
 
+.chroma {
+    font-family: "Ubuntu Mono", monospace;
+    font-size: 1rem;
+    padding: 1.5rem 1rem;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+}
 
 /* media queries */
 
