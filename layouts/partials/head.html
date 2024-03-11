@@ -9,8 +9,8 @@
         {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
     {{ end -}}
     
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/fonts.css">
-    <link defer rel="stylesheet" href="/css/syntax.css">
+    <link rel="stylesheet" href="{{ absURL `css/style.css` }}">
+    <link rel="stylesheet" href="{{ absURL `css/fonts.css` }}">
+    <link defer rel="stylesheet" href="{{ absURL `css/syntax.css` }}">
     
 </head>
