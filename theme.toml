@@ -11,6 +11,6 @@ features = ["generative art", "responsiveness", "readability", "email reply"]
 demosite = "https://luisrego.com/ardeidae-demo/"
 
 authors = [
-    {name = "Luís Sousa Rêgo", homepage = "https://blog.luisrego.com"},
+    {name = "Luís Sousa Rêgo", homepage = "https://www.github.com/LuisSousaRego"},
     {name = "Darya Plotnytska", homepage = "https://www.github.com/ryaplots"}
 ]
