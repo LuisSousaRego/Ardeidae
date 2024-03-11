@@ -4,7 +4,7 @@
 name = "Ardeidae"
 license = "MIT"
 licenselink = "https://github.com/LuisSousaRego/Ardeidae/blob/master/LICENSE"
-description = "A blog theme that features generative art on the home page."
+description = "A blog theme featuring generative art on the home page."
 homepage = "http://luissousarego.github.io/ardeidae-demo/"
 tags = ["blog", "generative art"]
 features = ["generative art", "responsiveness", "readability", "email reply"]
