@@ -1,5 +1,5 @@
 <header>
-    <a id="site-title" href="{{ absURL `` }}">
+    <a id="site-title" href="{{ relURL `` }}">
         {{ .Site.Title }}
     </a>
     <section id="social-links" class="header-group">
@@ -11,7 +11,7 @@
             </svg>
         </a>
 
-        <a href="{{ absURL `index.xml` }}" class="header-icon">
+        <a href="{{ relURL `index.xml` }}" class="header-icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-rss"
                 viewBox="0 0 16 16">
                 <path
